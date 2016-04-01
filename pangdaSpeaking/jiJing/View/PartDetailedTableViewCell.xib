@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PartDetailedTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_default" translatesAutoresizingMaskIntoConstraints="NO" id="HPo-lb-LsA">
+                        <rect key="frame" x="8" y="3" width="53" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53" id="fOS-sq-xnv"/>
+                            <constraint firstAttribute="width" constant="53" id="hKE-wN-0bA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIR-fo-iHk">
+                        <rect key="frame" x="69" y="19" width="298" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.22745098039215686" green="0.22745098039215686" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HPo-lb-LsA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2io-aI-Del"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HPo-lb-LsA" secondAttribute="bottom" constant="-4.5" id="3cx-TI-KAw"/>
+                    <constraint firstItem="HPo-lb-LsA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="Mur-IO-awj"/>
+                    <constraint firstItem="CIR-fo-iHk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="U61-OX-BzG"/>
+                    <constraint firstItem="CIR-fo-iHk" firstAttribute="leading" secondItem="HPo-lb-LsA" secondAttribute="trailing" constant="8" id="aDf-k9-tQp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CIR-fo-iHk" secondAttribute="bottom" constant="10.5" id="evp-kT-Twy"/>
+                    <constraint firstItem="CIR-fo-iHk" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="u8f-nn-iH6"/>
+                    <constraint firstItem="CIR-fo-iHk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="61" id="xFn-lm-uni"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="CIR-fo-iHk" id="Aku-Ey-sPN"/>
+                <outlet property="heardimage" destination="HPo-lb-LsA" id="v1a-93-ZnT"/>
+                <outlet property="imageView" destination="HPo-lb-LsA" id="UOH-rT-vMr"/>
+            </connections>
+            <point key="canvasLocation" x="271.5" y="255"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pic_default" width="130" height="130"/>
+    </resources>
+</document>

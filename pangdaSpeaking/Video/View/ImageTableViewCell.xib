@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="189" id="KGk-i7-Jjw" customClass="ImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDv-yQ-wSq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                    </scrollView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zgr-F4-QiR">
+                        <rect key="frame" x="330" y="180" width="30" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Mly-EP-VUg"/>
+                            <constraint firstAttribute="height" constant="37" id="vMp-IG-aLs"/>
+                        </constraints>
+                    </pageControl>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3T-3V-zPO">
+                        <rect key="frame" x="5" y="185" width="250" height="20"/>
+                        <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="ir8-eU-Tt9"/>
+                            <constraint firstAttribute="height" constant="20" id="qRP-gG-EEO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zgr-F4-QiR" secondAttribute="trailing" constant="15" id="7Ab-pQ-Nkv"/>
+                    <constraint firstItem="nDv-yQ-wSq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HaS-xE-f50"/>
+                    <constraint firstItem="g3T-3V-zPO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Hkw-ef-QmJ"/>
+                    <constraint firstItem="nDv-yQ-wSq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="J4o-mX-Dvj"/>
+                    <constraint firstAttribute="trailing" secondItem="nDv-yQ-wSq" secondAttribute="trailing" id="O8z-kx-Dg8"/>
+                    <constraint firstAttribute="bottom" secondItem="Zgr-F4-QiR" secondAttribute="bottom" constant="-7.5" id="WAW-T0-ujt"/>
+                    <constraint firstAttribute="bottom" secondItem="nDv-yQ-wSq" secondAttribute="bottom" constant="24.5" id="eCi-eh-q5T"/>
+                    <constraint firstAttribute="bottom" secondItem="g3T-3V-zPO" secondAttribute="bottom" constant="4.5" id="x9l-AM-xtc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MyPage" destination="Zgr-F4-QiR" id="ttV-M5-K6p"/>
+                <outlet property="desLabel" destination="g3T-3V-zPO" id="qes-Wc-nso"/>
+                <outlet property="scrollView" destination="nDv-yQ-wSq" id="3dN-2g-3Ys"/>
+            </connections>
+            <point key="canvasLocation" x="267.5" y="282"/>
+        </tableViewCell>
+    </objects>
+</document>
