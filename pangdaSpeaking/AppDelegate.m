@@ -18,7 +18,7 @@
 
 @implementation AppDelegate{
 
-
+//这里添加一句话
     NSString *appUpLoadUrl;
 }
 
