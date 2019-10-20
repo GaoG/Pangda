@@ -1,7 +1,7 @@
 //
 //  AppDelegate.m
 //  pangdaSpeaking
-//
+//测试的信息
 //  Created by benniaoyasi on 15/11/18.
 //  Copyright © 2015年 jingzexiang. All rights reserved.
 //
